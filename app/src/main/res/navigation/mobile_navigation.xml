@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_bonuses">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="pathfinder.bufftracker.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_bonuses"
+        android:name="pathfinder.bufftracker.ui.bonuses.BonusesFragment"
+        android:label="@string/title_bonuses"
+        tools:layout="@layout/fragment_bonuses" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="pathfinder.bufftracker.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_buff_list"
+        android:name="pathfinder.bufftracker.ui.bufflist.BuffListFragment"
+        android:label="@string/title_buff_list"
+        tools:layout="@layout/fragment_buff_list" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="pathfinder.bufftracker.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_buff_categories"
+        android:name="pathfinder.bufftracker.ui.buffcategories.BuffCategoriesFragment"
+        android:label="@string/title_buff_categories"
+        tools:layout="@layout/fragment_buff_categories" />
 </navigation>
