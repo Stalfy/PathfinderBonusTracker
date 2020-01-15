@@ -6,5 +6,5 @@
 
     <string name="text_bonuses_fragment">This is the bonuses fragment\'s text.</string>
     <string name="text_buff_list_fragment">This is the buff list fragment\'s text.</string>
-    <string name="text_buff_categories_fragment">This is the buff categories fragment\'s text.</string>
+    <string name="text_categories_fragment">This is the buff categories fragment\'s text.</string>
 </resources>
