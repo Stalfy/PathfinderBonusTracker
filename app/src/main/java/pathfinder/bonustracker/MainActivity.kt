@@ -1,4 +1,4 @@
-package pathfinder.bufftracker
+package pathfinder.bonustracker
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     // Passing each menu ID as a set of Ids because each
     // menu should be considered as top level destinations.
     val appBarConfiguration = AppBarConfiguration(setOf(
-      R.id.navigation_bonuses, R.id.navigation_buff_list, R.id.navigation_buff_categories))
+      R.id.navigation_tracking, R.id.navigation_bonuses, R.id.navigation_categories))
 
     setupActionBarWithNavController(navController, appBarConfiguration)
     navView.setupWithNavController(navController)

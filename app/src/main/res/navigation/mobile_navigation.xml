@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_bonuses">
+    app:startDestination="@+id/navigation_tracking">
+
+    <fragment
+        android:id="@+id/navigation_tracking"
+        android:name="pathfinder.bonustracker.ui.tracking.TrackingFragment"
+        android:label="@string/title_tracking"
+        tools:layout="@layout/fragment_tracking" />
 
     <fragment
         android:id="@+id/navigation_bonuses"
-        android:name="pathfinder.bufftracker.ui.bonuses.BonusesFragment"
+        android:name="pathfinder.bonustracker.ui.bonuses.BonusesFragment"
         android:label="@string/title_bonuses"
         tools:layout="@layout/fragment_bonuses" />
 
     <fragment
-        android:id="@+id/navigation_buff_list"
-        android:name="pathfinder.bufftracker.ui.bufflist.BuffListFragment"
-        android:label="@string/title_buff_list"
-        tools:layout="@layout/fragment_buff_list" />
-
-    <fragment
-        android:id="@+id/navigation_buff_categories"
-        android:name="pathfinder.bufftracker.ui.buffcategories.BuffCategoriesFragment"
-        android:label="@string/title_buff_categories"
-        tools:layout="@layout/fragment_buff_categories" />
+        android:id="@+id/navigation_categories"
+        android:name="pathfinder.bonustracker.ui.categories.CategoriesFragment"
+        android:label="@string/title_categories"
+        tools:layout="@layout/fragment_categories" />
 </navigation>

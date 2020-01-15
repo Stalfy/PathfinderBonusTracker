@@ -1,12 +1,12 @@
-package pathfinder.bufftracker.ui.bufflist
+package pathfinder.bonustracker.ui.tracking
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class BuffListViewModel : ViewModel() {
+class TrackingViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "Default Buff List Fragment Text Value."
+        value = "Default Bonuses Fragment Text Value."
     }
 
     val text: MutableLiveData<String> = _text

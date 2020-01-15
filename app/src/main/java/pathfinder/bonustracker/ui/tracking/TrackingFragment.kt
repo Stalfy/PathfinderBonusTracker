@@ -1,4 +1,4 @@
-package pathfinder.bufftracker.ui.bonuses
+package pathfinder.bonustracker.ui.tracking
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,23 +8,23 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import pathfinder.bufftracker.R
+import pathfinder.bonustracker.R
 
-class BonusesFragment : Fragment() {
+class TrackingFragment : Fragment() {
 
-    private lateinit var bonusesViewModel: BonusesViewModel
+    private lateinit var trackingViewModel: TrackingViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        bonusesViewModel = ViewModelProviders.of(this).get(BonusesViewModel::class.java)
+        trackingViewModel = ViewModelProviders.of(this).get(TrackingViewModel::class.java)
 
-        val root = inflater.inflate(R.layout.fragment_bonuses, container, false)
+        val root = inflater.inflate(R.layout.fragment_tracking, container, false)
         val textView: TextView = root.findViewById(R.id.text_bonuses)
 
-        bonusesViewModel.text.observe(this, Observer {
+        trackingViewModel.text.observe(this, Observer {
             textView.text = it
         })
 
-        bonusesViewModel.text.value = getString(R.string.text_bonuses_fragment)
+        trackingViewModel.text.value = getString(R.string.text_bonuses_fragment)
 
         return root
     }

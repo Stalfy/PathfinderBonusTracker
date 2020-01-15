@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Pathfinder Buff Tracker</string>
+    <string name="app_name">Pathfinder Bonus Tracker</string>
+    <string name="title_tracking">Tracking</string>
     <string name="title_bonuses">Bonuses</string>
-    <string name="title_buff_list">Buff List</string>
-    <string name="title_buff_categories">Buff Categories</string>
+    <string name="title_categories">Categories</string>
 
     <string name="text_bonuses_fragment">This is the bonuses fragment\'s text.</string>
     <string name="text_buff_list_fragment">This is the buff list fragment\'s text.</string>

@@ -2,18 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/navigation_tracking"
+        android:icon="@drawable/ic_tracking_black_24dp"
+        android:title="@string/title_tracking" />
+
+    <item
         android:id="@+id/navigation_bonuses"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:icon="@drawable/ic_bonuses_black_24dp"
         android:title="@string/title_bonuses" />
 
     <item
-        android:id="@+id/navigation_buff_list"
-        android:icon="@drawable/ic_buff_list_24dp"
-        android:title="@string/title_buff_list" />
-
-    <item
-        android:id="@+id/navigation_buff_categories"
-        android:icon="@drawable/ic_buff_categories_24dp"
-        android:title="@string/title_buff_categories" />
+        android:id="@+id/navigation_categories"
+        android:icon="@drawable/ic_categories_black_24dp"
+        android:title="@string/title_categories" />
 
 </menu>

@@ -1,4 +1,4 @@
-package pathfinder.bufftracker
+package pathfinder.bonustracker
 
 import org.junit.Test
 
